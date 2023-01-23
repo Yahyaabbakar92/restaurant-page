@@ -6,6 +6,81 @@ html {
 
 body {
 	margin: 0;
+	padding: 0;
 	font-family: 'Montserrat', sans-serif;
+	min-height: 100vh;
 	/* font-family: 'Roboto', sans-serif; */
+}
+
+header {
+	background-color: #f2f2f2;
+	padding: 10px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	margin-right: 10px;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: #333;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-img {
+	width: 600px;
+	height: 400px;
+	object-fit: cover;
+	margin-right: 20px;
+}
+
+.main-text {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	width: 600px;
+	text-align: justify;
+}
+
+footer {
+	background-color: #f2f2f2;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.social-media {
+	display: flex;
+	align-items: center;
+}
+
+.social-link {
+	text-decoration: none;
+	color: #333;
+	margin-right: 10px;
+}
+
+.schedule-text {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+.copyright-text {
+	font-size: 0.8rem;
+	text-align: center;
 }
