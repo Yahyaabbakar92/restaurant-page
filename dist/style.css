@@ -9,7 +9,6 @@ body {
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
 	min-height: 100vh;
-	/* font-family: 'Roboto', sans-serif; */
 }
 
 header {
@@ -51,6 +50,7 @@ main {
 .main-text {
 	font-size: 1.2rem;
 	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
 	width: 600px;
 	text-align: justify;
 }
