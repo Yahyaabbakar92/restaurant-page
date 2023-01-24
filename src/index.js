@@ -1,3 +1,3 @@
-import appendElements from './webpage';
+import homeElements from './webpage';
 
-appendElements();
+homeElements();

@@ -1,7 +1,9 @@
 const content = document.getElementById('content');
+const homePage = document.createElement('div');
+homePage.setAttribute('id', 'home');
 const headerText = ['Home', 'Menu', 'About', 'Contact'];
 
-function appendElements() {
+function homeElements() {
 	// Header elements being created and appended to one another
 	const header = document.createElement('header');
 	header.setAttribute('id', 'header');
@@ -91,24 +93,26 @@ function appendElements() {
 	scheduleContainer.appendChild(scheduleHeading);
 	scheduleContainer.appendChild(scheduleText);
 
-	// Append to div with id of "content" - header
-	content.appendChild(header);
+	// Append to div with id of "homePage" - header
+	homePage.appendChild(header);
 	header.appendChild(nav);
 	nav.appendChild(ul);
 
-	// Append to div with id of "content" - main
-	content.appendChild(main);
+	// Append to div with id of "homePage" - main
+	homePage.appendChild(main);
 	main.appendChild(img);
 	main.appendChild(h1);
 	main.appendChild(p1);
 	main.appendChild(p2);
 	main.appendChild(p3);
 
-	// Append to div with id of "content" - footer
-	content.appendChild(footer);
+	// Append to div with id of "homePage" - footer
+	homePage.appendChild(footer);
 	footer.appendChild(socialsContainer);
 	footer.appendChild(scheduleContainer);
 	footer.appendChild(copyrightText);
+
+	content.appendChild(homePage);
 }
 
-export default appendElements;
+export default homeElements;
