@@ -8,7 +8,7 @@ function menuElements() {
 	menuMain.appendChild(h1);
 	content.appendChild(menuMain);
 
-	return menuMain.id;
+	// return menuMain.id;
 }
 
 export default menuElements;

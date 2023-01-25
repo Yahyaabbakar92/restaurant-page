@@ -21,12 +21,11 @@ function headerElements() {
 		ul.appendChild(li);
 	}
 
-	// Append to div with id of "content" - header
-	content.appendChild(header);
+	// Append to body before div id="content" - header
+	document.body.insertAdjacentElement('afterbegin', header);
 	header.appendChild(nav);
 	nav.appendChild(ul);
 
-	// console.log(ul.childNodes);
 	return ul.childNodes;
 }
 
@@ -61,8 +60,6 @@ function mainElements() {
 	main.appendChild(p1);
 	main.appendChild(p2);
 	main.appendChild(p3);
-
-	return main.id;
 }
 
 function footerElements() {
@@ -114,17 +111,11 @@ function footerElements() {
 	scheduleContainer.appendChild(scheduleHeading);
 	scheduleContainer.appendChild(scheduleText);
 
-	// Append to div with id of "content" - footer
-	content.appendChild(footer);
+	// Append to body after div of id="content" - footer
+	content.insertAdjacentElement('afterend', footer);
 	footer.appendChild(socialsContainer);
 	footer.appendChild(scheduleContainer);
 	footer.appendChild(copyrightText);
 }
 
-function webpageElements() {
-	headerElements();
-	mainElements();
-	footerElements();
-}
-
-export { headerElements, footerElements, mainElements, webpageElements };
+export { headerElements, footerElements, mainElements };

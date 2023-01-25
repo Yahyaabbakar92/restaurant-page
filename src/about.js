@@ -8,7 +8,7 @@ function aboutElements() {
 	aboutMain.appendChild(h1);
 	content.appendChild(aboutMain);
 
-	return aboutMain.id;
+	// return aboutMain.id;
 }
 
 export default aboutElements;
