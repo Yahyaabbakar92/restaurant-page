@@ -7,6 +7,8 @@ function menuElements() {
 	h1.textContent = 'Menu Items';
 	menuMain.appendChild(h1);
 	content.appendChild(menuMain);
+
+	return menuMain.id;
 }
 
 export default menuElements;

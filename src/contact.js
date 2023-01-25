@@ -7,6 +7,8 @@ function contactElements() {
 	h1.textContent = 'Contact Items';
 	contactMain.appendChild(h1);
 	content.appendChild(contactMain);
+
+	return contactMain.id;
 }
 
 export default contactElements;

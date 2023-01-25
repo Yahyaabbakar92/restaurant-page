@@ -7,6 +7,8 @@ function homeElements() {
 	h1.textContent = 'Home Items';
 	homeMain.appendChild(h1);
 	content.appendChild(homeMain);
+
+	return homeMain.id;
 }
 
 export default homeElements;

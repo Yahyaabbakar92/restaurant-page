@@ -26,7 +26,8 @@ function headerElements() {
 	header.appendChild(nav);
 	nav.appendChild(ul);
 
-	return header;
+	// console.log(ul.childNodes);
+	return ul.childNodes;
 }
 
 function mainElements() {
@@ -61,7 +62,7 @@ function mainElements() {
 	main.appendChild(p2);
 	main.appendChild(p3);
 
-	return main;
+	return main.id;
 }
 
 function footerElements() {
@@ -118,8 +119,6 @@ function footerElements() {
 	footer.appendChild(socialsContainer);
 	footer.appendChild(scheduleContainer);
 	footer.appendChild(copyrightText);
-
-	return footer;
 }
 
 function webpageElements() {
@@ -128,4 +127,4 @@ function webpageElements() {
 	footerElements();
 }
 
-export default webpageElements;
+export { headerElements, footerElements, mainElements, webpageElements };

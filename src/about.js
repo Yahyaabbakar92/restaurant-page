@@ -7,6 +7,8 @@ function aboutElements() {
 	h1.textContent = 'About Items';
 	aboutMain.appendChild(h1);
 	content.appendChild(aboutMain);
+
+	return aboutMain.id;
 }
 
 export default aboutElements;
