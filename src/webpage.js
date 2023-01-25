@@ -1,9 +1,8 @@
 const content = document.getElementById('content');
-const homePage = document.createElement('div');
-homePage.setAttribute('id', 'home');
-const headerText = ['Home', 'Menu', 'About', 'Contact'];
 
-function homeElements() {
+function headerElements() {
+	const headerText = ['Home', 'Menu', 'About', 'Contact'];
+
 	// Header elements being created and appended to one another
 	const header = document.createElement('header');
 	header.setAttribute('id', 'header');
@@ -22,6 +21,15 @@ function homeElements() {
 		ul.appendChild(li);
 	}
 
+	// Append to div with id of "content" - header
+	content.appendChild(header);
+	header.appendChild(nav);
+	nav.appendChild(ul);
+
+	return header;
+}
+
+function mainElements() {
 	// Main elements being created and appended to one another
 	const main = document.createElement('main');
 	main.setAttribute('id', 'main');
@@ -45,6 +53,18 @@ function homeElements() {
 	p3.textContent =
 		"We are committed to providing delicious and healthy options for our customers. Come find us on the street, and enjoy a meal that will make you feel great about what you're eating. All of our dishes are clearly labeled with calorie, protein, fat, and carbohydrate information.";
 
+	// Append to div with id of "content" - main
+	content.appendChild(main);
+	main.appendChild(img);
+	main.appendChild(h1);
+	main.appendChild(p1);
+	main.appendChild(p2);
+	main.appendChild(p3);
+
+	return main;
+}
+
+function footerElements() {
 	// Footer elements being created and appended to one another
 	const footer = document.createElement('footer');
 	footer.setAttribute('id', 'footer');
@@ -93,26 +113,19 @@ function homeElements() {
 	scheduleContainer.appendChild(scheduleHeading);
 	scheduleContainer.appendChild(scheduleText);
 
-	// Append to div with id of "homePage" - header
-	homePage.appendChild(header);
-	header.appendChild(nav);
-	nav.appendChild(ul);
-
-	// Append to div with id of "homePage" - main
-	homePage.appendChild(main);
-	main.appendChild(img);
-	main.appendChild(h1);
-	main.appendChild(p1);
-	main.appendChild(p2);
-	main.appendChild(p3);
-
-	// Append to div with id of "homePage" - footer
-	homePage.appendChild(footer);
+	// Append to div with id of "content" - footer
+	content.appendChild(footer);
 	footer.appendChild(socialsContainer);
 	footer.appendChild(scheduleContainer);
 	footer.appendChild(copyrightText);
 
-	content.appendChild(homePage);
+	return footer;
 }
 
-export default homeElements;
+function webpageElements() {
+	headerElements();
+	mainElements();
+	footerElements();
+}
+
+export default webpageElements;
