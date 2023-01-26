@@ -193,9 +193,31 @@ header {
 	font-size: 3.5rem;
 }
 
+#menu-section {
+	font-family: 'Open Sans', sans-serif;
+}
+
 .menu-section-heading {
 	font-size: 2rem;
-	border-bottom: #333 2px solid;
+	text-align: center;
+}
+
+.menu-item {
+	max-width: 480px;
+	border: #d6249f solid 2px;
+	margin: 60px auto;
+}
+
+.menu-img {
+	width: 480px;
+}
+
+.menu-item-title {
+	font-size: 1.3rem;
+}
+
+.menu-item-para {
+	font-size: 1rem;
 }
 /* Styling for about page */
 
