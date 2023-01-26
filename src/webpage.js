@@ -70,11 +70,15 @@ function footerElements() {
 	// Footer elements being created and appended to one another
 	const footer = document.createElement('footer');
 	footer.setAttribute('id', 'footer');
+	const topPart = document.createElement('div');
+	topPart.classList.add('top-footer');
 	const socialsContainer = document.createElement('div');
 	socialsContainer.classList.add('social-media');
 	const socialsHeading = document.createElement('h2');
 	socialsHeading.setAttribute('id', 'social-heading');
 	socialsHeading.textContent = 'Social Media';
+	const iconContainer = document.createElement('div');
+	iconContainer.classList.add('icon-container');
 	const facebookAnchor = document.createElement('a');
 	facebookAnchor.classList.add('social-link');
 	facebookAnchor.href = 'https://www.facebook.com/foodismood';
@@ -108,17 +112,19 @@ function footerElements() {
 	instagramAnchor.appendChild(instagramFA);
 
 	socialsContainer.appendChild(socialsHeading);
-	socialsContainer.appendChild(facebookAnchor);
-	socialsContainer.appendChild(twitterAnchor);
-	socialsContainer.appendChild(instagramAnchor);
+	socialsContainer.appendChild(iconContainer);
+	iconContainer.appendChild(facebookAnchor);
+	iconContainer.appendChild(twitterAnchor);
+	iconContainer.appendChild(instagramAnchor);
 
 	scheduleContainer.appendChild(scheduleHeading);
 	scheduleContainer.appendChild(scheduleText);
 
 	// Append to body after div of id="content" - footer
 	content.insertAdjacentElement('afterend', footer);
-	footer.appendChild(socialsContainer);
-	footer.appendChild(scheduleContainer);
+	footer.appendChild(topPart);
+	topPart.appendChild(socialsContainer);
+	topPart.appendChild(scheduleContainer);
 	footer.appendChild(copyrightText);
 }
 
