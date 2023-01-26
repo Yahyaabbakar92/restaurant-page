@@ -1,15 +1,17 @@
 const content = document.getElementById('content');
 
 function homeElements() {
+	// Main elements being created and appended to one another
 	const main = document.createElement('main');
 	main.setAttribute('id', 'main');
-	const img = document.createElement('img');
-	img.classList.add('main-img');
-	img.setAttribute('src', '/dist/imgs/sandwich.jpg');
-	img.setAttribute('alt', 'A sandwich being held');
 	const h1 = document.createElement('h1');
 	h1.setAttribute('id', 'main-heading');
 	h1.textContent = 'Food Is Mood';
+	const h2 = document.createElement('h2');
+	h2.setAttribute('id', 'sub-heading');
+	h2.textContent = 'Surely Ours Is The Best';
+	const containerPara = document.createElement('div');
+	containerPara.classList.add('para');
 	const p1 = document.createElement('p');
 	p1.classList.add('main-text');
 	p1.textContent =
@@ -25,11 +27,12 @@ function homeElements() {
 
 	// Append to div with id of "content" - main
 	content.appendChild(main);
-	main.appendChild(img);
 	main.appendChild(h1);
-	main.appendChild(p1);
-	main.appendChild(p2);
-	main.appendChild(p3);
+	main.appendChild(h2);
+	main.appendChild(containerPara);
+	containerPara.appendChild(p1);
+	containerPara.appendChild(p2);
+	containerPara.appendChild(p3);
 }
 
 export default homeElements;
