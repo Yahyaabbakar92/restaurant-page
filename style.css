@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Open+Sans&display=swap');
 
 html {
 	box-sizing: border-box;
@@ -7,7 +7,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Aboreto', cursive;
 	min-height: 100vh;
 	background-color: rgb(61, 64, 59);
 }
@@ -49,6 +49,7 @@ header {
 	background-size: cover;
 }
 
+/* Styling for home page and webpage */
 #main {
 	display: flex;
 	flex-direction: column;
@@ -75,7 +76,7 @@ header {
 .main-text {
 	font-size: 1.2rem;
 	line-height: 1.5;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	width: 600px;
 	text-align: justify;
 }
@@ -171,3 +172,9 @@ header {
 	font-size: 0.8rem;
 	text-align: center;
 }
+
+/* Styling for menu page */
+
+/* Styling for about page */
+
+/* Styling for contact page */
