@@ -7,7 +7,9 @@ function headerElements() {
 	const header = document.createElement('header');
 	header.setAttribute('id', 'header');
 	const nav = document.createElement('nav');
+	nav.classList.add('nav');
 	const ul = document.createElement('ul');
+	ul.classList.add('nav-list');
 
 	// Adding headerText values to <li> and <a>
 	for (const text of headerText) {
@@ -33,13 +35,14 @@ function mainElements() {
 	// Main elements being created and appended to one another
 	const main = document.createElement('main');
 	main.setAttribute('id', 'main');
-	const img = document.createElement('img');
-	img.classList.add('main-img');
-	img.setAttribute('src', '/dist/imgs/sandwich.jpg');
-	img.setAttribute('alt', 'A sandwich being held');
 	const h1 = document.createElement('h1');
 	h1.setAttribute('id', 'main-heading');
 	h1.textContent = 'Food Is Mood';
+	const h2 = document.createElement('h2');
+	h2.setAttribute('id', 'sub-heading');
+	h2.textContent = 'Surely Ours Is The Best';
+	const containerPara = document.createElement('div');
+	containerPara.classList.add('para');
 	const p1 = document.createElement('p');
 	p1.classList.add('main-text');
 	p1.textContent =
@@ -55,11 +58,12 @@ function mainElements() {
 
 	// Append to div with id of "content" - main
 	content.appendChild(main);
-	main.appendChild(img);
 	main.appendChild(h1);
-	main.appendChild(p1);
-	main.appendChild(p2);
-	main.appendChild(p3);
+	main.appendChild(h2);
+	main.appendChild(containerPara);
+	containerPara.appendChild(p1);
+	containerPara.appendChild(p2);
+	containerPara.appendChild(p3);
 }
 
 function footerElements() {
