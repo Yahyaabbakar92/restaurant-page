@@ -12,6 +12,16 @@ body {
 	background-color: rgb(61, 64, 59);
 }
 
+#content {
+	min-height: 100vh;
+	min-height: 100dvh;
+	display: grid;
+	grid-template-rows:
+		auto
+		1fr
+		auto;
+}
+
 header {
 	background-color: #ffffff;
 	position: sticky;
@@ -204,12 +214,20 @@ header {
 
 .menu-item {
 	max-width: 480px;
-	border: #d6249f solid 2px;
 	margin: 60px auto;
+	background: rgba(217, 217, 217, 0.58);
+	border: 1px solid white;
+	box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+	border-radius: 17px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.5s;
 }
 
 .menu-img {
 	width: 480px;
+	border-top-left-radius: 17px;
+	border-top-right-radius: 17px;
 }
 
 .menu-item-title {
