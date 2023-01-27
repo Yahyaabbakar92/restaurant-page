@@ -264,3 +264,34 @@ header {
 }
 
 /* Styling for contact page */
+#contact-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	min-height: 100vh;
+	color: #333;
+	border-radius: 50px;
+	background: rgba(224, 224, 224, 0.55);
+	box-shadow: 0px 2px 0px #bebebe, 0px -1px 0px #ffffff;
+	width: 700px;
+	min-width: 380px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+#contact-heading {
+	font-size: 3.5rem;
+}
+
+.contact-text {
+	font-family: 'Open Sans', sans-serif;
+	padding: 10px 80px;
+	font-size: 1.2rem;
+}
+
+.contact-list {
+	list-style: none;
+	font-size: 1.2rem;
+	font-family: 'Open Sans', sans-serif;
+}
