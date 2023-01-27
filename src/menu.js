@@ -14,7 +14,7 @@ function menuElements() {
 	friesItem.classList.add('menu-item');
 	const friesImage = document.createElement('img');
 	friesImage.classList.add('menu-img');
-	friesImage.setAttribute('src', '/dist/imgs/fries.jpg');
+	friesImage.setAttribute('src', 'dist/imgs/fries.jpg');
 	friesImage.setAttribute('alt', 'french fries');
 	const friesTitle = document.createElement('h3');
 	friesTitle.classList.add('menu-item-title');
@@ -32,7 +32,7 @@ function menuElements() {
 	wingsItem.classList.add('menu-item');
 	const wingsImage = document.createElement('img');
 	wingsImage.classList.add('menu-img');
-	wingsImage.setAttribute('src', '/dist/imgs/wings.jpg');
+	wingsImage.setAttribute('src', 'dist/imgs/wings.jpg');
 	wingsImage.setAttribute('alt', 'wings');
 	const wingsTitle = document.createElement('h3');
 	wingsTitle.classList.add('menu-item-title');
@@ -50,7 +50,7 @@ function menuElements() {
 	wrapsItem.classList.add('menu-item');
 	const wrapsImage = document.createElement('img');
 	wrapsImage.classList.add('menu-img');
-	wrapsImage.setAttribute('src', '/dist/imgs/wraps.jpg');
+	wrapsImage.setAttribute('src', 'dist/imgs/wraps.jpg');
 	wrapsImage.setAttribute('alt', 'wraps');
 	const wrapsTitle = document.createElement('h3');
 	wrapsTitle.classList.add('menu-item-title');
@@ -68,7 +68,7 @@ function menuElements() {
 	burgerItem.classList.add('menu-item');
 	const burgerImage = document.createElement('img');
 	burgerImage.classList.add('menu-img');
-	burgerImage.setAttribute('src', '/dist/imgs/burger.jpg');
+	burgerImage.setAttribute('src', 'dist/imgs/burger.jpg');
 	burgerImage.setAttribute('alt', 'burger');
 	const burgerTitle = document.createElement('h3');
 	burgerTitle.classList.add('menu-item-title');
@@ -86,7 +86,7 @@ function menuElements() {
 	pizzaItem.classList.add('menu-item');
 	const pizzaImage = document.createElement('img');
 	pizzaImage.classList.add('menu-img');
-	pizzaImage.setAttribute('src', '/dist/imgs/pizza.jpg');
+	pizzaImage.setAttribute('src', 'dist/imgs/pizza.jpg');
 	pizzaImage.setAttribute('alt', 'pizza');
 	const pizzaTitle = document.createElement('h3');
 	pizzaTitle.classList.add('menu-item-title');
@@ -104,7 +104,7 @@ function menuElements() {
 	juiceItem.classList.add('menu-item');
 	const juiceImage = document.createElement('img');
 	juiceImage.classList.add('menu-img');
-	juiceImage.setAttribute('src', '/dist/imgs/juices.jpg');
+	juiceImage.setAttribute('src', 'dist/imgs/juices.jpg');
 	juiceImage.setAttribute('alt', 'juice');
 	const juiceTitle = document.createElement('h3');
 	juiceTitle.classList.add('menu-item-title');
